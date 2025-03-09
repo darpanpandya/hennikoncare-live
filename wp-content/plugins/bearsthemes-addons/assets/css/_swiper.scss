@@ -1,0 +1,128 @@
+.elementor-swiper-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  min-width: 50px;
+  font-size: 24px;
+  color: $main-color;
+  outline: none;
+  z-index: 3;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  span, i {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  i, svg {
+    margin-top: -2px;
+  }
+  svg {
+    width: 24px;
+    height: auto;
+  }
+}
+
+.elementor-navigation-type-both {
+  .elementor-swiper-button-prev span {
+    margin-left: 4px;
+  }
+  .elementor-swiper-button-next span {
+    margin-right: 4px;
+  }
+}
+
+.elementor-navigation-type-text,
+.elementor-navigation-type-both {
+  .elementor-swiper-button {
+    padding: 0 12px;
+  }
+}
+
+.elementor-navigation-position-outside {
+  .elementor-swiper-button-prev {
+    left: -30px;
+    -webkit-transform: translate3d(-100%,-50%,1px);
+    transform: translate3d(-100%,-50%,1px);
+  }
+  .elementor-swiper-button-next {
+    right: -30px;
+    -webkit-transform: translate3d(100%,-50%,1px);
+    transform: translate3d(100%,-50%,1px);
+  }
+}
+
+.elementor-widget {
+  .elementor-swiper-button {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate3d(0,-50%,1px) scale(0.5);
+    transform: translate3d(0,-50%,1px) scale(0.5);
+  }
+  &:hover,
+  &.elementor-navigation-always-yes {
+    .elementor-swiper-button {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: translate3d(0,-50%,1px) scale(1);
+      transform: translate3d(0,-50%,1px) scale(1);
+    }
+  }
+}
+
+.elementor-swiper-pagination {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+  z-index: 3;
+  &.swiper-pagination-progressbar {
+    width: 100%;
+    height: 4px;
+  }
+  .swiper-pagination-bullet {
+    margin: 0 6px;
+    outline: none;
+  }
+
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill,
+.swiper-pagination-bullet {
+  background: $main-color;
+}
+
+.swiper-pagination-fraction {
+  color: $main-color;
+}
+
+.elementor-pagination-position-outside .swiper-container {
+  padding-bottom: 0;
+}
+
+.elementor-pagination-position-outside .swiper-thumbs .swiper-container {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.elementor-navigation-position-outside .elementor-testimonials--skin-list-coropuna {
+  .elementor-swiper-button-prev {
+    left: 10px;
+    -webkit-transform: translate3d(0, -50%, 1px);
+    transform: translate3d(0, -50%, 1px);
+  }
+  .elementor-swiper-button-next {
+    right: 10px;
+    -webkit-transform: translate3d(0, -50%, 1px);
+    transform: translate3d(0, -50%, 1px);
+  }
+}
+
+.elementor-pagination-position-outside .elementor-testimonials--skin-list-coropuna .elementor-swiper-pagination {
+  bottom: 150px;
+  @media( max-width: $break-xs - 0.02 ) {
+    bottom: 110px;
+  }
+}

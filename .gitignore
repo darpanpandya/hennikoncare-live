@@ -1,0 +1,7 @@
+# Ignore WordPress Core files
+wp-admin/
+wp-includes/
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+.htaccess

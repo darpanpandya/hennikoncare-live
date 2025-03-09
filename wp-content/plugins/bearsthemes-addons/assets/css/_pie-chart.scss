@@ -1,0 +1,25 @@
+.elementor-pie-chart {
+  text-align: center;
+  .progressbar-text {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    span {
+      display: block;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-top: 8px;
+    }
+  }
+  &__progress {
+    margin-bottom: 12px;
+  }
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 0;
+  }
+
+}

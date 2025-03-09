@@ -1,0 +1,65 @@
+.elementor-pagination {
+  text-align: center;
+  margin-top: 64px;
+  .nav-links {
+    display: inline-flex;
+    background: #FFFFFF;
+    border: 1px solid #E7E5E4;
+    border-radius: 2px;
+    .page-numbers {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 45px;
+      text-align: center;
+      text-decoration: none;
+      min-width: 45px;
+      &:not(:last-child) {
+        border-right: 1px solid #E7E5E4;
+      }
+      &:first-child {
+        border-radius: 2px 0px 0px 2px;
+      }
+      &:last-child {
+        border-radius: 0px 2px 2px 0px;
+      }
+      &.current, &:hover {
+        color: #FFFFFF;
+        background: $main-color;
+        svg {
+          fill: #FFFFFF;
+        }
+      }
+      &.prev, &.next {
+        padding: 0 16px;
+        svg {
+          display: inline-block;
+          vertical-align: middle;
+          margin-top: -2px;
+        }
+      }
+      &.prev svg {
+        margin-right: 4px;
+      }
+      &.next svg {
+        margin-left: 4px;
+      }
+      @media(max-width: $break-xs - 0.02) {
+        line-height: 35px;
+        min-width: 35px;
+        &.prev, &.next {
+          font-size: 0;
+          min-width: 35px;
+          padding: 0;
+          svg {
+            margin: -2px 0 0 0;
+          }
+        }
+      }
+
+    }
+  }
+  @media(max-width: $break-sm - 0.02) {
+    margin-top: 48px;
+  }
+
+}

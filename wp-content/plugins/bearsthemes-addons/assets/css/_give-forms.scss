@@ -1,0 +1,3142 @@
+.elementor-give-forms {
+  &--default {
+    .elementor-give-form {
+      background: #F9F7F5;
+      overflow: hidden;
+      border-radius: 2px;
+    	.give-card {
+        &__media {
+          position: relative;
+          overflow: hidden;
+          padding-bottom: 66%;
+          background: #e7e6e4;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+      	}
+        &__body {
+      		padding: 24px 32px;
+          .give-goal-progress {
+            margin-bottom: 24px;
+            .raised {
+              margin-bottom: 4px;
+            }
+            .income,
+            .goal-text {
+              color: $main-color;
+            }
+          }
+      	}
+        &__title {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 30px;
+          margin-bottom: 12px;
+          a {
+            color: inherit;
+            &:hover {
+              color: $main-color;
+            }
+          }
+        }
+        &__text {
+          margin: 0 0 24px;
+        }
+        &__button {
+          display: inline-block;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 24px;
+          color: #FFFFFF;
+          background: $main-color;
+          padding: 12px 24px;
+          border-radius: 2px;
+          &:hover {
+            background: darken($main-color, 10);
+          }
+        }
+      }
+    	@media( max-width: $break-xs - 0.02 ) {
+    		.give-card {
+          &__body {
+      			padding: 24px 16px;
+      			.give-goal-progress {
+      				margin-bottom: 16px;
+      				.raised {
+      					font-size: 14px;
+      				}
+      				.income {
+      					font-size: 24px;
+      				}
+      			}
+      		}
+          &__title {
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 8px;
+          }
+          &__text {
+            margin-bottom: 16px;
+          }
+          &__button {
+            font-size: 13px;
+            line-height: 20px;
+            padding: 8px 16px;
+          }
+        }
+    	}
+    }
+  }
+
+  &--skin-grid-pumori {
+    .elementor-give-form {
+      position: relative;
+      overflow: hidden;
+      &:hover {
+        .give-card {
+          &__media img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+      .give-card {
+        &__media {
+          position: relative;
+          overflow: hidden;
+          padding-bottom: 100%;
+          background: #e7e6e4;
+          z-index: 1;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+          }
+      	}
+        &__overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 40, 102, 0.5);
+        }
+        &__category{
+          position: absolute;
+          top: 30px;
+          left: 0;
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 1;
+          text-transform: uppercase;
+          color: #002866;
+          background: #FFEE00;
+          padding: 10px 20px;
+          z-index: 3;
+          a {
+            color: inherit;
+          }
+        }
+        &__body{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding: 50px;
+          z-index: 3;
+        }
+        &__title{
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 1.25;
+          color: #FFFFFF;
+          margin-bottom: 0;
+          a {
+            color: inherit;
+          }
+        }
+      }
+      .give-goal-progress {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 24px 0 0;
+        .raised {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          .raised-income, .raised-goal {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+          }
+          .raised-goal {
+            text-align: right;
+          }
+          .income, .goal-text {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.25;
+            color: #FFEE00;
+            margin-bottom: 4px;
+          }
+        }
+      }
+
+      @media( max-width: $break-xs - 0.02 ) {
+        .give-card {
+          &__title {
+            font-size: 20px;
+          }
+          &__body {
+            padding: 30px 16px;
+          }
+        }
+        .give-goal-progress {
+          font-size: 13px;
+          margin-top: 16px;
+          .raised {
+            margin-bottom: 12px;
+            .income, .goal-text {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
+  &--skin-grid-coropuna {
+    .elementor-give-form {
+      background: #F5F5F5;
+      overflow: hidden;
+      &:hover {
+        .give-card {
+          &__media img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+      &.has-btn-donation {
+        .give-card {
+          &__body {
+            padding: 30px 240px 30px 40px;
+          }
+        }
+      }
+      .give-card {
+        &__media {
+          position: relative;
+          overflow: hidden;
+          padding-bottom: 66%;
+          background: #e7e6e4;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+          }
+        }
+        &__overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          background: rgba(0,0,0,0.7);
+          background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, transparent 100%);
+        }
+        &__body {
+          position: relative;
+          padding: 30px 40px;
+        }
+        &__category {
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 1.5;
+          text-transform: uppercase;
+          color: #BFCC80;
+          margin-bottom: 8px;
+          svg {
+            display: inline-block;
+            vertical-align: middle;
+            fill: #BFCC80;
+            margin: -3px 4px 0 1px;
+          }
+          a {
+            color: inherit;
+          }
+        }
+        &__title {
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 128.5%;
+          color: #4E3629;
+          margin: 0;
+          a {
+            color: inherit;
+          }
+        }
+      }
+
+      .give-btn-modal {
+        position: absolute;
+        top: 50%;
+        right: 40px;
+        width: auto;
+        display: inline-block;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #BFCC80;
+        margin-top: -25px;
+        padding: 15px 35px;
+        &:hover {
+          background: #4E3629;
+        }
+      }
+
+      .give-goal-progress {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 3;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.25;
+        text-transform: uppercase;
+        color: #BFCC80;
+        margin-bottom: 0;
+        padding: 30px 40px;
+        .raised {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 12px;
+          .raised-income, .raised-goal {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: baseline;
+          }
+          .income, .goal-text {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.25;
+            color: #BFCC80;
+            margin-left: 4px;
+          }
+        }
+      }
+
+      @media( max-width: $break-md - 0.02 ) {
+        &.has-btn-donation {
+          .give-card {
+            &__body {
+              padding: 25px 30px;
+            }
+          }
+        }
+        .give-card {
+          &__body {
+            padding: 25px 30px;
+          }
+        }
+        .give-btn-modal {
+          position: static;
+          margin-top: 20px;
+          padding: 15px 30px;
+        }
+        .give-goal-progress {
+          padding: 30px;
+        }
+
+      }
+
+      @media( max-width: $break-xs - 0.02 ) {
+        &.has-btn-donation {
+          .give-card {
+            &__body {
+              padding: 24px 16px;
+            }
+          }
+        }
+        .give-card {
+          &__body {
+            padding: 24px 16px;
+          }
+        }
+        .give-goal-progress {
+          font-size: 12px;
+          padding: 24px 16px;
+          .raised {
+            .income, .goal-text {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
+  &--skin-list-andrus {
+    &.elementor-grid {
+      display: block;
+      margin: 0 -15px;
+      &:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+    .elementor-post-wrap {
+      width: 50%;
+      float: left;
+      margin-bottom: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .elementor-give-form-feature {
+      position: relative;
+      background: #FFFFFF;
+      overflow: hidden;
+      border-radius: 5px;
+      -webkit-box-shadow: 0 5px 35px rgba(0,0,0,.1);
+      box-shadow: 0 5px 35px rgba(0,0,0,.1);
+      .give-card {
+        &__media {
+          position: relative;
+          overflow: hidden;
+          padding-bottom: 100.4%;
+          background: #e7e6e4;
+          border-radius: 5px;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+          }
+        }
+        &__overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+        }
+        &__body {
+          position: absolute;
+          bottom: 60px;
+          left: 0;
+          max-width: 370px;
+          background: rgba(0,0,0,.87);
+          padding: 30px 30px 50px;
+          z-index: 3;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+        &__category {
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 1.5;
+          text-transform: uppercase;
+          color: #bfbebe;
+          margin-bottom: 5px;
+          a {
+            color: #fed700;
+          }
+        }
+        &__title {
+          font-size: 22px;
+          font-weight: 800;
+          line-height: 1.25;
+          color: #ffffff;
+          margin-bottom: 5px;
+          a {
+            color: inherit;
+          }
+        }
+      }
+      .give-btn-modal {
+        position: absolute;
+        bottom: -25px;
+        width: auto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #ffffff;
+        background: #fed700;
+        margin: 0;
+        padding: 13px 20px;
+        border-radius: 3px;
+        &:hover {
+          background: #F1CD08;
+        }
+      }
+      .give-goal-progress {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+        color: #ffffff;
+        margin-bottom: 0;
+        .raised {
+          margin-bottom: 0;
+        }
+        .income, .goal-text {
+          font-size: 24px;
+          font-weight: 800;
+          line-height: 1.25;
+          color: #fed700;
+        }
+      }
+    }
+    .elementor-give-form {
+      display: flex;
+      align-items: center;
+      background: #FFFFFF;
+      overflow: hidden;
+      border-radius: 5px;
+      -webkit-box-shadow: 0 5px 35px rgba(0,0,0,.1);
+      box-shadow: 0 5px 35px rgba(0,0,0,.1);
+      .give-card {
+        &__media {
+          position: relative;
+          overflow: hidden;
+          width: 30%;
+        }
+        &__thumb {
+          position: relative;
+          overflow: hidden;
+          padding-bottom: 100%;
+          background: #e7e6e4;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+          }
+        }
+        &__overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+        }
+        &__body {
+          width: 70%;
+          position: relative;
+          padding: 10px 30px;
+        }
+        &__category {
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 1.5;
+          text-transform: uppercase;
+          color: #bfbebe;
+          margin-bottom: 5px;
+          a {
+            color: #fed700;
+          }
+        }
+        &__title {
+          font-size: 16px;
+          font-weight: 800;
+          line-height: 24px;
+          text-transform: uppercase;
+          color: #333333;
+          margin-bottom: 5px;
+          a {
+            color: inherit;
+          }
+        }
+      }
+      .give-btn-modal {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 0;
+        background-color: #fed700;
+        background-image: url('../images/heart-light.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 16px;
+        outline: none;
+        margin: 0;
+        z-index: 3;
+        border-radius: 5px;
+        &:hover {
+          background-color: #F1CD08;
+        }
+      }
+      .give-goal-progress {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+        color: #666666;
+        margin-bottom: 0;
+        .raised {
+          margin-bottom: 0;
+        }
+        .income, .goal-text {
+          font-size: 18px;
+          font-weight: 800;
+          line-height: 1.25;
+          color: #fed700;
+        }
+      }
+
+    }
+
+    @media( max-width: $break-md - 0.02 ) {
+      .elementor-post-wrap {
+        width: 100%;
+        float: none;
+      }
+    }
+    @media( max-width: $break-xs - 0.02 ) {
+      .elementor-give-form-feature .give-card__body {
+        max-width: 85%;
+        padding: 24px 16px 40px;
+      }
+      .elementor-give-form {
+        flex-direction: column;
+        text-align: center;
+        .give-card {
+          &__media {
+            width: 100%;
+          }
+          &__body {
+            width: 100%;
+            padding: 24px 16px;
+          }
+        }
+      }
+    }
+
+  }
+
+  &--skin-grid-changtse {
+    .elementor-give-form {
+      position: relative;
+      overflow: hidden;
+      border-radius: 3px;
+      &:hover {
+        .give-card {
+          &__media img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+      .give-card {
+        &__media {
+          position: relative;
+          overflow: hidden;
+          padding-bottom: 100%;
+          background: #e7e6e4;
+          z-index: 1;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+          }
+      	}
+        &__overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 40, 102, 0.5);
+        }
+        &__body{
+          position: relative;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding: 20px;
+          z-index: 3;
+          border: 10px solid #efefef;
+          border-top: none;
+        }
+        &__title {
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 1.25;
+          color: #333333;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          margin-bottom: 20px;
+          a {
+            color: inherit;
+          }
+        }
+        &__date{
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 1.5;
+          color: #e05d41;
+          margin-bottom: 15px;
+          svg{
+            margin-right: 4px;
+            fill: #e05d41;
+          }
+          a{
+            color: inherit;
+          }
+        }
+        &__set-goal{
+          padding: 0;
+          list-style-type: none;
+          margin-top: 0px;
+          margin-bottom: 0;
+          position: relative;
+          .bt-give-goal{
+            font-size: 32px;
+            font-weight: 700;
+            color: #333;
+            line-height: 1;
+            sub{
+              bottom: 0;
+            }
+            span {
+                display: block;
+                font-size: 16px;
+                font-weight: 400;
+                margin-top: 0px;
+                color: #666;
+            }
+          }
+        }
+      }
+      .give-btn-modal {
+        position: absolute;
+        bottom: 30px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 0;
+        background-color: #e05d41;
+        background-image: url('../images/heart-light.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 16px;
+        outline: none;
+        margin: 0;
+        z-index: 3;
+        border-radius: 5px;
+        &:hover {
+          background-color: #667A62;
+        }
+      }
+
+      @media( max-width: $break-xs - 0.02 ) {
+        .give-card {
+          &__title {
+            font-size: 24px;
+          }
+          &__body {
+            padding: 30px 16px;
+          }
+        }
+        .give-goal-progress {
+          font-size: 13px;
+          margin-top: 16px;
+        }
+      }
+
+    }
+
+  }
+
+  &--skin-list-saltoro {
+    .elementor-give-form {
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      .give-card {
+        &__header {
+          width: 55%;
+          position: relative;
+          padding: 0 80px 80px 0;
+          &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 353px;
+            height: 371px;
+            background-image: url('../images/bg-pattern.jpg');
+            z-index: -1;
+          }
+        }
+        &__media {
+          position: relative;
+          overflow: hidden;
+          padding-bottom: 66%;
+          background: #e7e6e4;
+          z-index: 1;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+      	}
+        &__overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        &__category{
+          position: absolute;
+          top: 30px;
+          left: 30px;
+          font-size: 13px;
+          line-height: 20px;
+          text-transform: uppercase;
+          color: #ffffff;
+          background: #4b3381;
+          padding: 10px 15px;
+          z-index: 3;
+          &:before {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 10px solid #4b3381;
+            border-bottom: 10px solid transparent;
+          }
+          a {
+            color: inherit;
+          }
+        }
+        &__body{
+          width: 45%;
+          padding-left: 30px;
+        }
+        &__title{
+          font-size: 36px;
+          font-weight: 700;
+          line-height: 1.25;
+          color: #4b3381;
+          margin-bottom: 16px;
+          a {
+            color: inherit;
+          }
+        }
+        &__excerpt {
+          font-size: 18px;
+          line-height: 1.75;
+          color: #716886;
+          margin-bottom: 30px;
+        }
+      }
+      .give-btn-modal {
+        display: inline-block;
+        width: auto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #ffffff;
+        background: #f97a60;
+        padding: 20px 35px;
+        border-radius: 30px;
+        &:hover {
+          background: #f7544f;
+        }
+      }
+      .give-goal-progress {
+        font-size: 16px;
+        line-height: 1.25;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #f97a60;
+        margin: 0;
+        .raised {
+          margin-bottom: 40px;
+          .raised-income, .raised-goal {
+            display: inline-flex;
+            flex-direction: column-reverse;
+          }
+          .raised-income {
+            position: relative;
+            margin-right: 30px;
+            padding-right: 30px;
+            &:after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: 0;
+              width: 1px;
+              height: 40px;
+              background: #c5bfd2;
+              margin-top: -20px;
+            }
+          }
+          .income, .goal-text {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.25;
+            color: #4b3381;
+            margin-top: 4px;
+          }
+        }
+      }
+
+      @media( max-width: $break-md - 0.02 ) {
+        flex-direction: column;
+        text-align: center;
+        .give-card {
+          &__header {
+              width: 100%;
+              margin-bottom: 30px;
+              padding: 0;
+          }
+          &__body {
+            width: 100%;
+            padding: 0;
+          }
+        }
+      }
+
+      @media( max-width: $break-sm - 0.02 ) {
+        flex-direction: column;
+        .give-card {
+          &__header {
+              margin-bottom: 20px;
+          }
+          &__title {
+            font-size: 30px;
+            margin-bottom: 8px;
+          }
+          &__excerpt {
+            margin-bottom: 16px;
+          }
+        }
+        .give-goal-progress .raised {
+          margin-bottom: 30px;
+        }
+      }
+
+    }
+
+  }
+
+  &--skin-grid-hardeol {
+    .elementor-give-form {
+      position: relative;
+      background: #F5F5F5;
+      overflow: hidden;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      &.has-thumbnail {
+        .give-card {
+          &__body {
+            padding: 30px;
+            border: none;
+          }
+        }
+        .give-form-wrap {
+          position: absolute;
+          bottom: -34px;
+          left: 0;
+          width: 100%;
+          margin-top: 0;
+          padding: 0 30px;
+          visibility: hidden;
+          opacity: 0;
+          -webkit-transition: all .3s;
+          transition: all .3s;
+        }
+
+        &:hover {
+          .give-card {
+            &__body {
+              transform: translateY(-64px);
+            }
+          }
+          .give-form-wrap {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+      .give-card {
+        &__media {
+          position: relative;
+          overflow: hidden;
+          padding-bottom: 66%;
+          background: #e7e6e4;
+          border-top: 8px solid #638c1c;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        &__category {
+          position: absolute;
+          top: 8px;
+          left: 30px;
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 20px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          background: #638c1c;
+          padding: 8px 20px;
+          z-index: 3;
+          a {
+            color: inherit;
+          }
+        }
+        &__body {
+          position: relative;
+          background: #F5F5F5;
+          padding: 66px 30px 30px;
+          border-top: 8px solid #638c1c;
+          -webkit-transition: all .3s;
+          transition: all .3s;
+        }
+        &__title {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 1.25;
+          color: #333333;
+          margin-bottom: 12px;
+          a {
+            color: inherit;
+          }
+        }
+        &__completed {
+          font-size: 16px;
+          line-height: 1.5;
+          color: #999;
+          margin-top: 4px;
+        }
+      }
+      .elementor-give-modal-wrap {
+        margin-top: 20px;
+      }
+      .give-btn-modal {
+        display: inline-block;
+        width: auto;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #638c1c;
+        margin: 0;
+        padding: 12px 30px;
+        &:hover {
+          background: #4C691A;
+        }
+      }
+      .give-goal-progress {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.25;
+        color: #333333;
+        margin-bottom: 0;
+        .raised {
+          margin-bottom: 0;
+          .raised-goal {
+            display: none;
+          }
+          .income, .goal-text {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 1.25;
+            color: #638c1c;
+            margin-right: 4px;
+          }
+        }
+      }
+
+      @media( max-width: $break-xs - 0.02 ) {
+        .give-card {
+          &__body {
+            padding: 24px 16px;
+          }
+        }
+      }
+
+    }
+
+  }
+
+  &--skin-grid-nevado {
+    .elementor-give-form {
+      overflow: hidden;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      &:hover {
+        .give-card {
+          &__media img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+      .give-card {
+        &__media {
+          position: relative;
+          overflow: hidden;
+          padding-bottom: 66%;
+          background: #e7e6e4;
+          margin-bottom: 20px;
+          border-top-left-radius: 40px;
+          border-bottom-right-radius: 40px;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+          }
+        }
+        &__category {
+          font-size: 13px;
+          font-weight: 600;
+          line-height: 20px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #265ed7;
+          margin-bottom: 8px;
+          a {
+            color: inherit;
+          }
+        }
+        &__title {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 1.25;
+          color: #002f6c;
+          margin-bottom: 20px;
+          a {
+            color: inherit;
+          }
+        }
+        &__meta {
+          list-style: none;
+          margin: 0 0 20px;
+          padding: 8px 0;
+          border-top: 1px dashed #d0d0d0;
+          border-bottom: 1px dashed #d0d0d0;
+          li {
+            display: inline-flex;
+            align-items: center;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666666;
+            &:not(:last-child) {
+              margin-right: 24px;
+            }
+            svg {
+              display: inline-block;
+              fill: #265ed7;
+              margin-right: 6px;
+            }
+          }
+        }
+      }
+      .give-goal-progress {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+        color: #666666;
+        margin-bottom: 0;
+        .raised {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 12px;
+          .income, .goal-text {
+            font-size: 24px;
+            font-weight: 800;
+            line-height: 1.25;
+            color: #265ed7;
+          }
+        }
+        svg {
+          border-radius: 10px;
+        }
+      }
+
+    }
+
+  }
+  &--skin-grid-taboche {
+    .elementor-give-form {
+      overflow: hidden;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      margin-bottom: 15px;
+      -webkit-box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.31);
+      -moz-box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.31);
+      box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.31);
+      &:hover {
+        .give-card {
+          &__media img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+      .give-card {
+        &__media {
+          position: relative;
+          overflow: hidden;
+          padding-bottom: 66%;
+          background: #e7e6e4;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+          }
+        }
+        &__body{
+          padding: 30px;
+          background: #fff;
+        }
+        &__title {
+          color: #333;
+          font-size: 23px;
+          line-height: 1.2;
+          letter-spacing: 0;
+          font-weight: 400;
+          margin: 15px 0;
+          a {
+            color: inherit;
+          }
+        }
+        &__meta-date {
+          font-size: 15px;
+          line-height: 1.6;
+          letter-spacing: 0;
+          color: #f7db07;
+          svg {
+            display: inline-block;
+            fill: #f7db07;
+            margin-right: 6px;
+          }
+        }
+      }
+      .give-card__progress-bar{
+        position: relative;
+        .give-card__completed{
+          position: absolute;
+          top: 16px;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 2.14;
+          letter-spacing: -.5px;
+          color: #555;
+        }
+      }
+      .give-goal-progress {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+        color: #666666;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        svg{
+          height: 6px !important;
+          border-radius: 2px;
+        }
+        .raised {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 50px;
+          border-top: #ebebeb solid 1px;
+          margin-bottom: 0;
+          .income, .goal-text {
+            font-size: 25px;
+            line-height: 1;
+            letter-spacing: 0;
+            color: #303030;
+            display: block;
+          }
+          .raised-income{
+            width: 45%;
+            float: left;
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+            line-height: 2.14;
+            display: flex;
+            flex-direction: column-reverse;
+          }
+          .raised-goal{
+            width: 55%;
+            float: left;
+            color: #777;
+            font-size: 14px;
+            line-height: 2.14;
+            text-align: center;
+            border-left: #ebebeb solid 1px;
+            display: flex;
+            flex-direction: column-reverse;
+          }
+        }
+        .give-progress-bar{
+          height: 6px !important;
+        }
+      }
+
+    }
+
+  }
+
+  &--skin-grid-galloway {
+    .elementor-give-form {
+      overflow: hidden;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      &:hover {
+        .give-card {
+          &__media img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+      &.has-thumbnail {
+        .give-card {
+          &__donors-count {
+            margin: 0 0 5px 15px;
+            z-index: 1;
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -10px;
+              z-index: -1;
+              border: solid 10px transparent;
+              border-right-color: #333;
+
+            }
+          }
+        }
+      }
+      .give-card {
+        &__donors-count {
+          position: relative;
+          display: inline-block;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 20px;
+          color: #FFFFFF;
+          background: #333333;
+          margin: 0 0 20px;
+          padding: 4px 8px;
+          border-radius: 2px;
+        }
+        &__media {
+          position: relative;
+          overflow: hidden;
+          padding-bottom: 66%;
+          background: #e7e6e4;
+          margin-bottom: 20px;
+          border-radius: 4px;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+          }
+        }
+        &__title {
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 1.25;
+          color: #282828;
+          margin-bottom: 16px;
+          a {
+            color: inherit;
+          }
+        }
+        &__meta {
+          list-style: none;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.5;
+          color: #7A7A7A;
+        }
+        &__footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        &__read-more {
+          display: inline-block;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.5;
+          color: #ffba00;
+          svg {
+            display: inline-block;
+            vertical-align: middle;
+            fill: currentColor;
+            margin: -1px 0 0 4px;
+          }
+        }
+      }
+      .give-goal-progress {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+        color: #7A7A7A;
+        margin-bottom: 20px;
+        .raised {
+          margin-bottom: 8px;
+          .income, .goal-text {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.25;
+            color: #ffba00;
+          }
+        }
+      }
+
+    }
+
+  }
+
+  &--skin-grid-havsula {
+    .elementor-give-form {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      &:hover {
+        .give-card {
+          &__media img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+      &.has-thumbnail {
+        .give-goal-progress {
+          position: absolute !important;
+          top: 15px;
+          left: 15px;
+          width: 100%;
+          text-align: left;
+          color: #FFFFFF;
+          margin-bottom: 0;
+          z-index: 3;
+          .raised {
+            .income, .goal-text {
+              color: #FFFFFF;
+            }
+          }
+          .progressbar-text {
+            display: none;
+          }
+        }
+      }
+      .give-card {
+        &__overlay {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(#000000, 0.43);
+          z-index: 1;
+          -webkit-transition: all .3s;
+          transition: all .3s;
+        }
+        &__media {
+          position: relative;
+          overflow: hidden;
+          padding-bottom: 66%;
+          background: #e7e6e4;
+          margin-bottom: 30px;
+          border-radius: 4px;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+          }
+        }
+        &__donors-count {
+          display: inline-block;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          background: #ec2127;
+          padding: 4px 8px;
+          border-radius: 2px;
+          margin-bottom: 16px;
+        }
+        &__title {
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 1.25;
+          color: #1f1f1f;
+          margin-bottom: 12px;
+          a {
+            color: inherit;
+          }
+        }
+        &__meta {
+          list-style: none;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 1.5;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #444444;
+          margin-bottom: 16px;
+        }
+        &__read-more {
+          display: inline-block;
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 1.5;
+          text-transform: uppercase;
+          color: #ec2127;
+          svg {
+            display: inline-block;
+            vertical-align: middle;
+            fill: currentColor;
+            margin: -1px 0 0 4px;
+          }
+        }
+      }
+      .give-goal-progress {
+        display: inline-flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+        color: #444444;
+        margin-bottom: 16px;
+        .raised {
+          width: calc(100% - 50px);
+          margin-bottom: 0;
+          padding-left: 10px;
+          .income, .goal-text {
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 1.25;
+            color: #ec2127;
+          }
+        }
+        .progressbar-text {
+          display: none;
+        }
+      }
+
+    }
+
+  }
+
+  &--skin-cobble-paradis {
+    .elementor-row {
+      display: flex;
+      width: calc(100% + 30px);
+      margin-left: -15px;
+      margin-right: -15px;
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+      }
+      .elementor-col {
+        margin-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 45%;
+        &:first-child {
+          width: 55%;
+        }
+      }
+      @media( max-width: $break-sm - 0.02 ) {
+        flex-direction: column !important;
+        .elementor-col {
+          width: 100% !important;
+        }
+      }
+    }
+
+    .elementor-give-form {
+      position: relative;
+      overflow: hidden;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      &.has-thumbnail {
+        .give-card {
+          &__body {
+            position: relative;
+            max-width: 350px;
+            background: #FFFFFF;
+            margin: -50px 0 0 30px;
+            padding: 25px 30px 10px;
+            z-index: 5;
+            @media( max-width: $break-md - 0.02 ) {
+              margin: -40px 0 0 30px;
+              padding: 20px 15px 10px;
+            }
+            @media( max-width: $break-xs - 0.02 ) {
+              margin: -50px 0 0 15px;
+            }
+          }
+        }
+      }
+      .give-card {
+        &__overlay {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(#000000, 0.43);
+          opacity: 0;
+          z-index: 1;
+          -webkit-transition: all .3s;
+          transition: all .3s;
+        }
+        &__media {
+          position: relative;
+          overflow: hidden;
+          padding-bottom: 320px;
+          background: #e7e6e4;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        &__title {
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 1.25;
+          color: #367978;
+          margin-bottom: 24px;
+          a {
+            color: inherit;
+          }
+        }
+        &__read-more {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 60px;
+          height: 60px;
+          background: #ef2853;
+          color: #FFFFFF;
+          text-align: center;
+          line-height: 60px;
+          font-size: 22px;
+          border-radius: 50%;
+          margin: -30px 0 0 -30px;
+          opacity: 0;
+          z-index: 3;
+          -webkit-transition: .3s ease;
+          transition: .3s ease;
+          transform: scale(.3);
+          -webkit-transform: scale(.3);
+          svg {
+            fill: currentColor;
+          }
+          &:hover {
+            background: #367978;
+          }
+        }
+
+      }
+      .give-goal-progress {
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+        color: #444444;
+        margin-bottom: 0;
+        .raised {
+          margin: 12px 0 0 0;
+          .income, .goal-text {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.25;
+            color: #ef2853;
+          }
+        }
+      }
+      &:hover {
+        .give-card {
+          &__overlay {
+            opacity: 1;
+          }
+          &__read-more {
+            opacity: 1;
+            transform: scale(1);
+            -webkit-transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+
+  &--skin-cobble-castor {
+    grid-template-areas:
+    'item1 item1 item2 item3'
+    'item1 item1 item4 item5';
+    @media( max-width: $break-md - 0.02 ) {
+      grid-template-areas:
+      'item1 item1'
+      'item2 item3'
+      'item4 item5';
+    }
+    @media( max-width: $break-sm - 0.02 ) {
+      grid-template-areas:
+      'item1'
+      'item2'
+      'item3'
+      'item4'
+      'item5';
+    }
+    .elementor-give-form {
+      position: relative;
+      background: #FFFFFF;
+      overflow: hidden;
+      border: 1px solid #eaeaea;
+      border-radius: 15px;
+      -webkit-box-shadow: 0 2px 4px rgba(#000000, 0.1);
+      box-shadow: 0 2px 4px rgba(#000000, 0.1);
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      &--1 { grid-area: item1; }
+      &--2 { grid-area: item2; }
+      &--3 { grid-area: item3; }
+      &--4 { grid-area: item4; }
+      &--5 { grid-area: item5; }
+
+      &.elementor-give-form-feature {
+        .give-card {
+          &__title {
+            margin-bottom: 20px;
+          }
+        }
+        @media( min-width: $break-sm ) {
+          .give-card {
+            &__body {
+              padding: 30px;
+            }
+            &__title {
+              font-size: 26px;
+            }
+          }
+        }
+      }
+
+      .give-card {
+        &__media {
+          position: relative;
+          width: 100%;
+          min-height: 250px;
+          height: 100%;
+          background: #e7e6e4;
+          overflow: hidden;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+          }
+        }
+        &__overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(#000000, 0.5);
+          z-index: 1;
+          opacity: 0;
+          -webkit-transition: all .3s;
+          transition: all .3s;
+        }
+        &__body {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background: rgba(#FFFFFF, 0.97);
+          padding: 15px;
+          z-index: 3;
+          -webkit-transition: all .5s;
+          transition: all .5s;
+        }
+        &__title {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 1.15;
+          color: #333333;
+          margin-bottom: 0;
+          a {
+            color: inherit;
+          }
+        }
+        &__read-more {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 60px;
+          height: 60px;
+          background: #4892da;
+          color: #FFFFFF;
+          text-align: center;
+          line-height: 60px;
+          font-size: 22px;
+          border-radius: 50%;
+          margin: -30px 0 0 -30px;
+          opacity: 0;
+          z-index: 3;
+          -webkit-transition: .3s ease;
+          transition: .3s ease;
+          transform: scale(.3);
+          -webkit-transform: scale(.3);
+          svg {
+            fill: currentColor;
+          }
+        }
+      }
+      .give-goal-progress {
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+        color: #4c4c4c;
+        margin-bottom: 0;
+        .raised {
+          margin: 12px 0 0 0;
+          .income, .goal-text {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.25;
+            color: #4892da;
+          }
+        }
+      }
+      &:hover {
+        .give-card {
+          &__overlay {
+            opacity: 1;
+          }
+          &__body {
+            transform: translateY(100%);
+            -webkit-transform: translateY(100%);
+          }
+          &__read-more {
+            opacity: 1;
+            transform: scale(1);
+            -webkit-transform: scale(1);
+          }
+        }
+      }
+    }
+
+  }
+
+  &--skin-grid-wilson {
+    .elementor-give-form {
+      padding-top: 18px;
+      overflow: hidden;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      position: relative;
+      &:hover {
+        .give-card {
+          &__media img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+      &.has-thumbnail {
+        .give-card {
+          &__body {
+            border: none;
+          }
+        }
+      }
+      .give-card {
+        &__media {
+          position: relative;
+          overflow: hidden;
+          padding-bottom: 66%;
+          background: #e7e6e4;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+          }
+        }
+        &__category {
+          position: absolute;
+          top: 0;
+          left: 30px;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          color: #fff;
+          background: #a08958;
+          padding: 8px 15px;
+          z-index: 9;
+          a {
+            color: inherit;
+          }
+        }
+        &__body {
+          position: relative;
+          background: #fff;
+          padding: 25px 30px 30px;
+          -webkit-transition: all .3s;
+          transition: all .3s;
+        }
+        &__title {
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 1.25;
+          color: #333333;
+          margin-bottom: 12px;
+          a {
+            color: inherit;
+          }
+        }
+      }
+      .give-goal-progress{
+        margin-bottom: 0;
+        .bt-price{
+          .bt-goal{
+            line-height: 1.5;
+            font-size: 32px;
+            font-weight: 700;
+            color: #a08958;
+          }
+          .bt-collected{
+            line-height: 1.5;
+            font-size: 15px;
+            color: #333;
+            margin-bottom: 20px;
+          }
+        }
+        .bt-progress{
+          position: relative;
+          width: 100%;
+          height: 23px;
+          background: #fff;
+          border: 2px solid #a08958;
+          span{
+            float: left;
+            display: inline-block;
+            width: 10%;
+            height: 19px;
+            border-right: 2px solid #fff;
+            position: relative;
+            z-index: 3;
+          }
+          .bt-percent{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 19px;
+            color: #ffffff;
+            background: rgba(#a08958, 0.5);
+            z-index: 1;
+          }
+        }
+      }
+
+      @media( max-width: $break-xs - 0.02 ) {
+        .give-card {
+          &__body {
+            padding: 24px 16px;
+          }
+        }
+      }
+
+    }
+
+  }
+  &--skin-grid-cholatse {
+    .elementor-give-form {
+      background: #FCEFF9;
+      margin-bottom: 55px;
+      border-radius: 40px;
+      &:hover {
+        .give-card {
+          &__media img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+      .give-card {
+        &__media {
+          position: relative;
+          overflow: hidden;
+          padding-bottom: 66%;
+          background: #e7e6e4;
+          border-radius: 40px 40px 0px 0px;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+          }
+        }
+        &__body{
+          padding: 44px 40px 56px 40px;
+          position: relative;
+          .give-card__goal {
+            background: #AB3493;
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 11px 30px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 26px;
+            text-transform: uppercase;
+            color: #fff;
+            display: inline-block;
+            position: absolute;
+            top: -25px;
+            span{
+              font-weight: 700;
+              font-size: 18px;
+              color: #fff;
+            }
+          }
+        }
+        &__title {
+          font-weight: bold;
+          font-size: 22px;
+          line-height: 30px;
+          color: #292937;
+          margin-bottom: 5px;
+          a {
+            color: inherit;
+          }
+        }
+        &__excerpt{
+          font-size: 16px;
+          line-height: 28px;
+          color: #555555;
+        }
+        &__category {
+          font-size: 13px;
+          text-transform: uppercase;
+          color: #AB3493;
+          font-weight: 700;
+          a {
+            color: inherit;
+          }
+          svg {
+            display: inline-block;
+            fill: #AB3493;
+            margin-right: 6px;
+            vertical-align: middle;
+            margin-top: -5px;
+          }
+        }
+      }
+      .give-card__bottom-progress{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        bottom: -44px;
+        width: calc(100% - 80px);
+        .give-card__raised{
+          background: #FFFFFF;
+          border: 1px solid #CACACA;
+          box-sizing: border-box;
+          border-radius: 10px;
+          padding: 10px 30px;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 26px;
+          text-transform: uppercase;
+          color: #6C6C6C;
+          span{
+            font-weight: 700;
+            font-size: 18px;
+            color: #AB3493;
+          }
+        }
+        .give-card__progress-bar{
+          position: relative;
+          height: 88px;
+          border-radius: 50%;
+          background: #fff;
+        }
+      }
+
+      .give-goal-progress {
+        width: 88px;
+        height: 88px;
+        svg{
+          height: 88px !important;
+          overflow: visible;
+        }
+        .raised {
+          display: none
+        }
+        .progressbar-text {
+            font-weight: 600;
+        }
+        .give-progress-bar{
+          height: 6px !important;
+        }
+      }
+    }
+    @media( max-width: $break-sm - 0.02 ) {
+      .elementor-give-form {
+        .give-card {
+          &__body{
+            padding: 44px 20px 56px 20px;
+            position: relative;
+          }
+        }
+        .give-card__bottom-progress{
+          width: calc(100% - 40px);
+          bottom: -30px;
+          .give-card__raised{
+            padding: 10px;
+          }
+          .give-card__progress-bar{
+            height: 65px;
+          }
+        }
+        .give-goal-progress {
+          width: 65px;
+          height: 65px;
+          svg{
+            height: 65px !important;
+            overflow: visible;
+          }
+        }
+      }
+    }
+  }
+  &--skin-grid-tronador {
+    &.elementor-filter-wrap {
+      text-align: center;
+      margin: 0 0 30px;
+      .elementor-filter {
+        list-style: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        li {
+          position: relative;
+          display: inline-block;
+          font-size: inherit;
+          font-weight: 700;
+          line-height: 1.5;
+          text-transform: uppercase;
+          a {
+            display: inline-block;
+            color: #555555;
+            background: transparent;
+            padding: 13px 40px;
+            border-radius: 25px;
+            &.active,
+            &:hover {
+              color: #fff;
+              background: #4B915A
+            }
+          }
+        }
+        @media( max-width: $break-md - 0.02 ) {
+          li {
+            a {
+              padding: 20px 30px;
+            }
+          }
+        }
+        @media( max-width: $break-sm - 0.02 ) {
+          li {
+            font-size: 14px;
+            a {
+              padding: 15px 20px;
+            }
+          }
+        }
+      }
+    }
+    .no-result {
+      padding: 30px;
+    }
+    .elementor-give-form {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      border: 1px solid #EAE7E7;
+      &.animate__show {
+       -webkit-animation-duration: 1s;
+       animation-duration: 1s;
+       -webkit-animation-duration: 1s;
+       animation-duration: 1s;
+       -webkit-animation-fill-mode: both;
+       animation-fill-mode: both;
+       -webkit-animation-name: zoomIn;
+       animation-name: zoomIn;
+      }
+      &.animate__hide {
+       -webkit-animation-duration: 0.5s;
+       animation-duration: 0.5s;
+       -webkit-animation-duration: 0.5s;
+       animation-duration: 0.5s;
+       -webkit-animation-fill-mode: both;
+       animation-fill-mode: both;
+       -webkit-animation-name: zoomOut;
+       animation-name: zoomOut;
+      }
+      .give-card {
+        &__media {
+          position: relative;
+          overflow: hidden;
+          padding-bottom: 66%;
+          background: #e7e6e4;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        &__body{
+          background: #fff;
+        }
+        &__title {
+          color: #292937;
+          font-size: 20px;
+          line-height: 1.2;
+          letter-spacing: 0;
+          font-weight: 700;
+          margin: 15px 0 40px 0;
+          padding: 0 40px;
+          text-align: left;
+          a {
+            color: inherit;
+          }
+        }
+        &__meta-date {
+          font-size: 13px;
+          line-height: 1.6;
+          letter-spacing: 0;
+          color: #4B915A;
+          text-align: left;
+          margin-top: 30px;
+          padding: 0 40px;
+          font-weight: 700;
+          svg {
+            display: inline-block;
+            fill: #4B915A;
+            margin-right: 6px;
+            margin-top: -3px;
+            vertical-align: middle;
+          }
+        }
+      }
+      ul.give-card__total{
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        align-items: center;
+        border-top: 1px solid #EAE7E7;
+        margin: 0;
+        li.give-card__100 {
+            width: 30%;
+            border-right: 1px solid #EAE7E7;
+            padding: 7px 0;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 26px;
+            color: #4B915A;
+        }
+        li.give-card__goal {
+            width: 60%;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 26px;
+            color: #555555;
+        }
+      }
+      .give-card__raised {
+          padding: 15px 0;
+          color: #4B915A;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 26px;
+      }
+      .give-card__progress-bar{
+        position: relative;
+      }
+      .give-goal-progress {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+        color: #666666;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        svg{
+          border-radius: 0px;
+        }
+        .raised {
+          display: none;
+        }
+        .give-progress-bar{
+          height: 9px !important;
+          border-radius: 0px;
+        }
+      }
+      @media( max-width: $break-xs - 0.02 ) {
+        .give-card {
+          &__meta-date {
+            margin-top: 20px;
+            padding: 0 15px;
+          }
+          &__title {
+            margin: 15px 0 20px 0;
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+  &--skin-grid-vaccine {
+    .elementor-give-form {
+      position: relative;
+      overflow: hidden;
+      background: #FFFFFF;
+      padding: 24px;
+      border: 1px solid #E3E3E3;
+      border-radius: 10px;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      &:hover {
+        .give-card {
+          &__media img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+      .give-card {
+        &__media {
+          position: relative;
+          padding-bottom: 66%;
+          background: #e7e6e4;
+          overflow: hidden;
+          margin-bottom: 24px;
+          border-radius: 10px;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+          }
+        }
+        &__category {
+          font-size: 18px;
+          line-height: 1.67;
+          margin-bottom: 24px;
+          a {
+            display: inline-block;
+            color: inherit;
+            padding: 1px 12px;
+            color: #009E74;
+            background: #FFFFFF;
+            border: 1px solid #009E74;
+            border-radius: 8px;
+            &:not(:last-child) {
+              margin-right: 8px;
+            }
+            &:hover {
+              color: #FFFFFF;
+              background: #009E74;
+            }
+          }
+        }
+        &__title {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 1.29;
+          color: #151515;
+          margin-bottom: 24px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          a {
+            color: inherit;
+            &:hover {
+              color: #25A5F4;
+            }
+          }
+        }
+        &__date {
+          font-size: 18px;
+          line-height: 1.67;
+          color: #8A8A8A;
+          margin-bottom: 24px;
+        }
+      }
+      .give-btn-modal {
+        display: inline-block;
+        width: auto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        color: #FFFFFF;
+        padding: 10px 30px;
+        background: #25A5F4;
+        border-radius: 10px;
+        &:hover {
+          background: #0052B5;
+        }
+      }
+      .give-goal-progress {
+        font-size: 18px;
+        line-height: 1.67;
+        color: #151515;
+        margin-bottom: 8px;
+        svg {
+          border-radius: 10px;
+        }
+        .raised {
+          margin-bottom: 8px;
+        }
+        .income {
+          font-size: 24px;
+          font-weight: 700;
+          color: #25A5F4;
+        }
+        .goal-text {
+          font-weight: 700;
+          color: #25A5F4;
+        }
+      }
+
+      @media( max-width: 1440px ) {
+        padding: 16px;
+        .give-card {
+          &__category,
+          &__date,
+          &__button {
+            font-size: 16px;
+          }
+        }
+        .give-goal-progress {
+          font-size: 16px;
+        }
+      }
+
+    }
+  }
+  &--skin-grid-yutmaru {
+    .elementor-give-form {
+      position: relative;
+      overflow: hidden;
+      background: #FFFFFF;
+      padding: 24px;
+      border: 1px solid #E3E3E3;
+      border-radius: 30px;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      &:hover {
+        .give-card {
+          &__media img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+      .give-card {
+        &__media {
+          position: relative;
+          padding-bottom: 66%;
+          background: #e7e6e4;
+          overflow: hidden;
+          border-radius: 30px;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+          }
+        }
+        &__body {
+          position: relative;
+          padding-top: 50px;
+        }
+        &__category {
+          position: absolute;
+          top: -20px;
+          left: 50%;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 1.67;
+          white-space: nowrap;
+          color: #FFFFFF;
+          background: #009E74;
+          padding: 5px 20px;
+          border-radius: 30px;
+          -webkit-box-shadow: 0px 10px 20px rgba(0, 158, 116, 0.3);
+          box-shadow: 0px 10px 20px rgba(0, 158, 116, 0.3);
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          a {
+            color: inherit;
+          }
+          svg {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+          }
+        }
+        &__title {
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 1.29;
+          text-align: center;
+          color: #151515;
+          margin-bottom: 30px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          a {
+            color: inherit;
+            &:hover {
+              color: #F4B03E;
+            }
+          }
+        }
+      }
+      .give-btn-modal {
+        position: relative;
+        z-index: 3;
+        display: inline-block;
+        width: auto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: unset;
+        color: #FFFFFF;
+        float: right;
+        margin-top: -40px;
+        padding: 10px 20px;
+        background: #151515;
+        border-radius: 30px;
+        &:hover {
+          background: #F4B03E;
+        }
+      }
+      .give-goal-progress {
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 18px;
+        line-height: 1.67;
+        color: #151515;
+        margin-bottom: 0;
+        svg {
+          border-radius: 10px;
+        }
+        .raised {
+          margin: 40px 0 0;
+          padding-right: 130px;
+        }
+        .income {
+          font-size: 24px;
+          font-weight: 700;
+          color: #F4B03E;
+        }
+        .goal-text {
+          font-weight: 700;
+          color: #F4B03E;
+        }
+      }
+
+      @media( max-width: 1440px ) {
+        padding: 16px;
+        .give-card {
+          &__body {
+            padding-top: 44px;
+          }
+
+          &__title {
+            font-size: 24px;
+            margin-bottom: 24px;
+          }
+          &__category,
+          &__date,
+          &__button {
+            font-size: 16px;
+          }
+        }
+        .give-goal-progress {
+          font-size: 16px;
+          .raised {
+            margin-top: 24px;
+          }
+          .income {
+            font-size: 20px;
+          }
+        }
+      }
+
+    }
+  }
+  &--skin-grid-platons {
+    .elementor-give-form {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      background: #FDEBAF;
+      padding: 20px 20px 0;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      &:hover {
+        background: #FCD755;
+        .give-card {
+          &__media img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+      .give-card {
+        &__media {
+          position: relative;
+          padding-bottom: 66%;
+          background: #e7e6e4;
+          overflow: hidden;
+          margin-bottom: 24px;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+          }
+        }
+        &__body {
+          background: #3D7C71;
+          margin: 0 -20px;
+          padding: 20px 20px 30px;
+        }
+        &__title {
+          font-size: 24px;
+          font-weight: 800;
+          line-height: 1.5;
+          color: #032F27;
+          margin-bottom: 20px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          a {
+            color: inherit;
+          }
+        }
+      }
+      .give-btn-modal {
+        display: inline-block;
+        width: auto;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 24px;
+        color: #206155;
+        padding: 10px 30px;
+        background: #FFFFFF;
+        border-radius: 3px;
+        -webkit-box-shadow: 10px 10px 0px 0px #206155;
+        box-shadow: 10px 10px 0px 0px #206155;
+        &:hover {
+          background: #FFFFFF;
+        }
+      }
+      .give-goal-progress {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #FFFFFF;
+        margin-bottom: 8px;
+        svg {
+          border-radius: 3px;
+        }
+        .raised {
+          margin-bottom: 8px;
+        }
+        .income {
+          font-size: 24px;
+          font-weight: 800;
+          color: #FCD755;
+        }
+        .goal-text {
+          font-weight: 800;
+          color: #FCD755;
+        }
+      }
+    }
+  }
+  &--skin-grid-nuptse {
+    .elementor-give-form {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      background: #FFFFFF;
+      padding: 30px;
+      border-radius: 14px;
+      -webkit-box-shadow: 0px 10px 20px rgba(21, 21, 21, 0.05);
+      box-shadow: 0px 10px 20px rgba(21, 21, 21, 0.05);
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      &:hover {
+        .give-card {
+          &__media img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+      .give-card {
+        &__media {
+          position: relative;
+          padding-bottom: 66%;
+          background: #e7e6e4;
+          overflow: hidden;
+          margin-bottom: 24px;
+          border-radius: 100px;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+          }
+        }
+        &__title {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 1.5;
+          color: #151515;
+          margin-bottom: 20px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          a {
+            color: inherit;
+          }
+        }
+        &__completed {
+            float: right;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.5;
+            color: #3F86ED;
+            margin-top: -55px;
+        }
+      }
+      .give-btn-modal {
+        display: inline-block;
+        width: auto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #011F51;
+        margin-top: 20px;
+        padding: 10px 30px;
+        background: #7CF2AD;
+        border-radius: 30px;
+        &:hover {
+          color: #FFFFFF;
+          background: #011F51;
+        }
+      }
+      .give-goal-progress {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
+        color: #151515;
+        margin-bottom: 8px;
+        svg {
+          border-radius: 10px;
+        }
+        .raised {
+          margin-bottom: 0;
+        }
+        .income {
+          font-size: 16px;
+          font-weight: 700;
+          color: #151515;
+        }
+        .goal-text {
+          font-weight: 700;
+          color: #151515;
+        }
+      }
+      @media( max-width: $break-xs - 0.02 ) {
+        padding: 24px 16px;
+      }
+    }
+  }
+
+  &--skin-grid-gamin {
+    .elementor-give-form {
+      position: relative;
+      overflow: hidden;
+      background: #FFFFFF;
+      border: 2px solid #171717;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      &:hover {
+        .give-card {
+          &__media img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+      .give-card {
+        &__media {
+          position: relative;
+          padding-bottom: 66%;
+          background: #e7e6e4;
+          overflow: hidden;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+          }
+        }
+        &__progress-wrap {
+          position: relative;
+          background: #ECE8F4;
+          padding: 15px 30px;
+        }
+        &__progress {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+        }
+        &__body {
+          padding: 30px;
+        }
+        &__completed {
+          font-size: 56px;
+          font-weight: 700;
+          line-height: 1.4;
+          color: #846DB7;
+        }
+        &__goal {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 1.5;
+          color: #50426F;
+        }
+        &__title {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 1.5;
+          color: #171717;
+          margin-bottom: 8px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          a {
+            color: inherit;
+          }
+        }
+        &__excerpt {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.6;
+          color: #737373;
+        }
+        &__footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 30px;
+        }
+        &__icon {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 44px;
+          height: 44px;
+          background: #846DB7;
+        }
+      }
+      .give-btn-modal {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0;
+        width: 24px;
+        height: 24px;
+        background-color: #FFFFFF;
+        background-image: url('../images/heart-dark.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px;
+        margin: 0;
+        padding: 0;
+        &:hover {
+          background-color: #FFFFFF;
+        }
+      }
+    }
+  }
+  &--skin-grid-cruces {
+    .elementor-give-form {
+      position: relative;
+      overflow: hidden;
+      background: #F8F8FF;
+      border-radius: 10px;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      &:hover {
+        .give-card {
+          &__media img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+      .give-card {
+        &__media {
+          position: relative;
+          padding-bottom: 66%;
+          background: #e7e6e4;
+          overflow: hidden;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+            transition: all 1.5s cubic-bezier(.11,.52,.53,.79) 0s;
+          }
+        }
+        &__body {
+          padding: 25px 30px;
+          @media( max-width: $break-xs - 0.02 ) {
+            padding: 25px 15px;
+          }
+        }
+        &__title {
+          font-weight: 700;
+          font-size: 26px;
+          line-height: 1.3;
+          color: #011E41;
+          margin-bottom: 10px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          a {
+            color: inherit;
+            &:hover {
+              color: #BFB170;
+            }
+          }
+        }
+        &__excerpt {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 1.67;
+          color: #444444;
+          margin-bottom: 25px;
+        }
+        &__category {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 20px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          background: #BFB170;
+          padding: 6px 15px;
+          border-radius: 5px;
+          a {
+            color: inherit;
+          }
+        }
+        &__progress {
+          .give-goal-progress {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            color: #19697C;
+            margin: 0;
+            .income,
+            .goal-text {
+              display: block;
+              font-weight: 700;
+              font-size: 26px;
+              line-height: 30px;
+              color: #BFB170;
+              margin-bottom: 8px;
+            }
+          }
+          .raised {
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            > span {
+              width: calc(50% - 5px);
+              background: #FFFFFF;
+              padding: 12px 15px;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

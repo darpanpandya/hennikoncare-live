@@ -1,0 +1,240 @@
+.elementor-counter {
+  text-align: center;
+  &--icon-position-left .elementor-counter {
+      display: flex;
+      text-align: left;
+      &__icon-wrap {
+        margin-right: 16px;
+        margin-bottom: 0 !important;
+      }
+  }
+  &--icon-position-right .elementor-counter {
+      display: flex;
+      flex-direction: row-reverse;
+      text-align: right;
+      &__icon-wrap {
+        margin-left: 16px;
+        margin-bottom: 0 !important;
+      }
+  }
+
+  &--vertical-align-top .elementor-counter {
+    align-items: flex-start;
+  }
+
+  &--vertical-align-middle .elementor-counter {
+    align-items: center;
+  }
+
+  &--vertical-align-bottom .elementor-counter {
+    align-items: flex-end;
+  }
+
+  &--icon-view-stacked .elementor-counter__icon,
+  &--icon-view-framed .elementor-counter__icon {
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--icon-view-stacked .elementor-counter__icon {
+    background: $main-color;
+    i {
+      font-size: 16px;
+      color: #FFFFFF;
+    }
+    svg {
+      width: 16px;
+      height: auto;
+      fill: #FFFFFF;
+    }
+  }
+
+  &--icon-view-framed .elementor-counter__icon {
+    background: #FFFFFF;
+    border: 2px solid $main-color;
+    i {
+      font-size: 16px;
+      color: $main-color;
+    }
+    svg {
+      width: 16px;
+      height: auto;
+      fill: $main-color;
+    }
+  }
+
+  &--icon-shape-circle .elementor-counter__icon {
+    border-radius: 50%;
+  }
+
+  &--icon-shape-square .elementor-counter__icon {
+    border-radius: 0;
+  }
+  &__icon-wrap {
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+  &__icon {
+    display: inline-block;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    i {
+      font-size: 50px;
+      color: $main-color;
+      margin-top: -2px;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+    }
+    svg {
+      width: 50px;
+      height: auto;
+      fill: $main-color;
+      margin-top: -2px;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+    }
+  }
+  &__number-wrap {
+    display: inline-flex;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 100%;
+    color: $main-color;
+  }
+  &__number-prefix {
+    margin-right: 4px;
+  }
+  &__number-suffix {
+    margin-left: 4px;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+.elementor-countdown {
+  text-align: center;
+  &--view-stacked {
+    .elementor-countdown {
+      .countdown-row {
+    		.countdown-section {
+          display: inline-flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100px;
+          height: 100px;
+          background: $main-color;
+    			margin: 15px;
+    			padding: 0;
+    			&:not(:last-child){
+    				&:after{
+    					display: none;
+    				}
+    			}
+    			> span {
+    				&.countdown-amount {
+    					color: #FFFFFF;
+    				}
+            &.countdown-period {
+              color: #FFFFFF;
+            }
+    			}
+    		}
+    	}
+    }
+  }
+  &--view-framed {
+    .elementor-countdown {
+      .countdown-row {
+        .countdown-section {
+          display: inline-flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100px;
+          height: 100px;
+          background: #FFFFFF;
+    			margin: 15px;
+    			padding: 0;
+          border: 2px solid $main-color;
+    			&:not(:last-child){
+    				&:after{
+    					display: none;
+    				}
+    			}
+    		}
+    	}
+    }
+  }
+  &--shape-circle {
+    .elementor-countdown {
+      .countdown-row {
+        .countdown-section {
+          border-radius: 50%;
+    		}
+    	}
+    }
+  }
+  &--shape-square {
+    .elementor-countdown {
+      .countdown-row {
+        .countdown-section {
+          border-radius: 0;
+    		}
+    	}
+    }
+  }
+  &--shape-rounded {
+    .elementor-countdown {
+      .countdown-row {
+        .countdown-section {
+          border-radius: 10px;
+    		}
+    	}
+    }
+  }
+  .countdown-row {
+		display: block;
+		.countdown-section {
+			position: relative;
+			display: inline-block;
+			margin-right: 30px;
+			padding-right: 30px;
+			&:not(:last-child) {
+				&:after{
+					content: ":";
+					position: absolute;
+					top: 0;
+					right: 0;
+					font-size: 40px;
+					font-weight: 700;
+					line-height: 45px;
+					color: $main-color;
+				}
+			}
+			> span {
+				display: block;
+				&.countdown-amount {
+					font-size: 40px;
+					font-weight: 700;
+					line-height: 45px;
+					letter-spacing: 0;
+					color: #333333;
+				}
+				&.countdown-period {
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 20px;
+					letter-spacing: 0;
+          color: #999999;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.elementor-list-logo {
+  &--default {
+    .swiper-wrapper {
+      align-items: center;
+    }
+    .elementor-logo {
+      line-height: 0;
+      text-align: center;
+      background: #FFFFFF;
+      overflow: hidden;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      img {
+        -webkit-transition: all .3s;
+        transition: all .3s;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@media( min-width: 576px ) {
+	#normal-sortables .bt-field {
+		display: flex;
+		justify-content: space-between;
+	}
+	#normal-sortables .bt-field label {
+		width: 16%;
+	}
+	#normal-sortables .bt-field .bt-content {
+		width: calc( 84% - 10px );
+	}
+}
+
+.bt-field:first-child {
+	padding-top: 6px;
+}
+.bt-field:not(:last-child) {
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #eaeaea;
+}
+.bt-field a {
+	text-decoration: none;
+	outline: none;
+}
+.bt-field input, .bt-field select, .bt-field textarea {
+	width: 100%;
+	max-width: 460px;
+}
+.bt-field label {
+	display: block;
+	margin: 6px 0 10px;
+}
+.bt-field .desc-field {
+	font-style: italic;
+	color: #999;
+	padding-top: 8px;
+}
+
+.bt-field-gallery .image-gallery {
+	line-height: 0;
+	margin: 0 0 5px;
+}
+.bt-field-gallery .image-gallery li {
+	position: relative;
+	display: inline-block;
+	width: 76px;
+    height: 76px;
+    margin: 0 8px 8px 0;
+	cursor: move;
+}
+.bt-field-gallery .image-gallery li span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+.bt-field-gallery .image-gallery li a {
+	position: absolute;
+    width: 12px;
+    height: 12px;
+    top: -6px;
+    right: -6px;
+    font-size: 14px;
+	line-height: 12px;
+	text-align: center;
+    color: #fff;
+	background: #aaa;
+	opacity: 0;
+	visibility: hidden;
+	border-radius: 10px;
+	-webkit-transition: all .4s;
+	transition: all .4s;
+}
+.bt-field-gallery .image-gallery li:hover a {
+	opacity: 1;
+	visibility: visible;
+}

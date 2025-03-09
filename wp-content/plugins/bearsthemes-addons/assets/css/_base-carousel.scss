@@ -1,0 +1,98 @@
+.elementor-slides {
+  &--default {
+    .elementor-slide {
+      background: #FFFFFF;
+      overflow: hidden;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      &__thumbnail {
+        position: relative;
+        padding-bottom: 66%;
+        background: #e7e6e4;
+        overflow: hidden;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          -webkit-transition: all .3s;
+          transition: all .3s;
+        }
+      }
+      &__content {
+        padding-top: 24px;
+      }
+      &__title {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 0;
+        a {
+          color: inherit;
+          &:hover {
+            color: $main-color;
+          }
+        }
+      }
+    }
+  }
+  &--skin-grid-pumori {
+    .elementor-slide {
+      position: relative;
+      background: #FFFFFF;
+      overflow: hidden;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      &__thumbnail {
+        position: relative;
+        padding-bottom: 66%;
+        background: #e7e6e4;
+        overflow: hidden;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          -webkit-transition: all .3s;
+          transition: all .3s;
+        }
+      }
+      &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        background: rgba(#FFEE00, .9);
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        svg {
+          fill: #002866;
+          -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+          -webkit-transition: all .6s;
+          transition: all .6s;
+        }
+      }
+      &:hover {
+        .elementor-slide {
+          &__overlay {
+            opacity: 1;
+            svg {
+              -webkit-transform: translateY(0);
+              transform: translateY(0);
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

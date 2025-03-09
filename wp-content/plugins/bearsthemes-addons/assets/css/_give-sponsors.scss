@@ -1,0 +1,109 @@
+.elementor-sponsors-table {
+  position: relative;
+  overflow: hidden;
+  background: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  border-radius: 10px;
+  .elementor-header {
+    display: flex;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    background: #333356;
+    &__title,
+    &__age,
+    &__gender,
+    &__wating {
+      width: 21%;
+      padding: 15px;
+    }
+    &__title {
+      width: 37%;
+    }
+  }
+  .elementor-sponsor {
+    display: flex;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333356;
+    &__title,
+    &__age,
+    &__gender,
+    &__waiting {
+      display: flex;
+      align-items: center;
+      width: 21%;
+      padding: 12px 15px;
+      border-width: 1px 0 0 1px;
+      border-style: solid;
+      border-color: #E7E7E7;
+    }
+    &__title {
+      width: 37%;
+      border-left: none;
+    }
+    &__thumbnail {
+      position: relative;
+      overflow: hidden;
+      background: #e7e6e4;
+      min-width: 40px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__name {
+      width: calc(100% - 40px);
+      padding-left: 10px;
+    }
+
+  }
+  @media( max-width: $break-sm - 0.02 ) {
+    .elementor-header {
+      display: none;
+    }
+    .elementor-sponsor {
+      flex-direction: column;
+      &:nth-child(even) {
+        background: #F8F8FF;
+      }
+      &__title,
+      &__age,
+      &__gender,
+      &__waiting {
+        width: 100%;
+        border-width: 1px 0 0 0;
+        &:before {
+          display: inline-block;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 1.5;
+          color: #444444;
+          margin-right: 10px;
+        }
+      }
+      &__title:before {
+        content: "Name:";
+      }
+      &__age:before {
+        content: "Age:";
+      }
+      &__gender:before {
+        content: "Gender:";
+      }
+      &__waiting:before {
+        content: "Waiting:";
+      }
+    }
+
+  }
+}

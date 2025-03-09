@@ -1,0 +1,217 @@
+.sermone-archive-container {
+  overflow: hidden;
+}
+
+.sermone-archive-posts {
+
+}
+
+.sermone-archive-style-list {
+
+  .sermone-item-preview {
+    margin-bottom: 55px;
+    
+    .sermone-post-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .sermone-thumb {
+        width: 220px; 
+
+        @media(max-width: 660px) {
+          margin-bottom: 20px;
+        }
+
+        a {
+          display: block;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .sermone-entry {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: calc(100% - 270px);
+
+        @media(max-width: 660px) {
+          width: 100%;
+        }
+
+        .sermone-info {
+          width: 80%;
+
+          @media(max-width: 768px) {
+            width: 100%;
+          }
+
+          .sermone-title {
+            margin-top: 0;
+            margin-bottom: .5em;
+          }
+
+          .in-tax,
+          .more-info {
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+        }
+
+        .sermone-actions {
+          width: 15%;
+
+          @media(max-width: 768px) {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            a {
+              margin-right: 15px;
+            }
+          }
+          
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: solid 1px black;
+            color: black;
+            padding: 15px 0;
+            text-decoration: none;
+
+            .__icon {
+              display: inline-bock;
+              width: 18px;
+              min-width: 18px;
+              margin-left: 6px;
+              transition: .3s ease;
+              -webkit-transition: .3s ease;
+
+              svg {
+                width: 100%;
+              }
+            }
+
+            &:hover {
+
+              .__icon {
+                transform: translate(5px, -5px);
+                -webkit-transform: translate(5px, -5px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sermone-archive-style-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  margin: 0 -20px;
+
+  .sermone-item-preview {
+    padding: 0 20px;
+    margin-bottom: 60px;
+    box-sizing: border-box;
+    width: calc(100% / 2);
+
+    @media(max-width: 545px) {
+      width: 100%;
+    }
+
+    .sermone-post-inner {
+      padding: 20px 0 0 0;
+      border-top: solid 1px;
+
+      .sermone-thumb {
+        margin-bottom: 25px;
+        float: left;
+        // margin-right: 25px;
+        margin-top: 5px;
+
+        @media(max-width: 768px) {
+          float: none;
+        }
+      }
+
+      .sermone-entry {
+
+        .sermone-info {
+
+          .sermone-title {
+            margin-top: 0;
+          }
+
+          .in-tax,
+          .more-info {
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+
+        }
+
+        .sermone-actions {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: solid 1px black;
+            color: black;
+            padding: 10px 0;
+            margin-right: 20px;
+            text-decoration: none;
+
+            .__icon {
+              display: inline-bock;
+              width: 18px;
+              min-width: 18px;
+              margin-left: 6px;
+              transition: .3s ease;
+              -webkit-transition: .3s ease;
+
+              svg {
+                width: 100%;
+              }
+            }
+
+            &:hover {
+
+              .__icon {
+                transform: translate(5px, -5px);
+                -webkit-transform: translate(5px, -5px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+*[data-sermone-fav] {
+
+  .__icon.__is-bold {
+    display: none;
+  }
+
+  &.__in-fav {
+
+    .__icon {
+      display: none;
+    }
+    
+    .__icon.__is-bold {
+      display: block;
+    }
+  }
+}
